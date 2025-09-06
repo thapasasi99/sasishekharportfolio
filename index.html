@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sasishekhar Thapa - Civil Engineer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header with Navigation -->
+    <header id="header">
+        <div class="container header-container">
+            <a href="#" class="logo">SasiShekhar</a>
+            <button class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#research" class="nav-link">Research Works</a></li>
+                <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container hero-container">
+            <img src="images/sasi.jpg.jpg" alt="Sasishekhar Thapa" class="profile-img">
+            <h1>Sasishekhar Thapa</h1>
+            <p class="hero-title">Civil Engineer</p>
+            <p class="hero-description">Civil engineer specializing in buildings and roads across Nepal. I plan, design, and deliver safe, sustainable infrastructure and teach structural engineering as a lecturer.</p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">View My Work</a>
+                <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="dark-section">
+        <div class="container about-content">
+            <div class="about-text">
+                <h2 class="section-title">About Me</h2>
+                <p>
+                    I am Sasishekhar Thapa, a certified civil engineer with over 8 years of experience specializing in structural design, project management, and sustainable construction practices. My expertise spans the design and execution of complex infrastructure projects, with a strong focus on safety, innovation, and environmental responsibility.
+                </p>
+                <p>
+                    I am passionate about integrating advanced engineering solutions with practical fieldwork, and I have a proven track record of delivering projects that meet rigorous standards for quality and efficiency. As a lecturer and lab assistant, I am committed to mentoring future engineers and fostering a collaborative learning environment.
+                </p>
+                <p>
+                    My professional achievements include multiple awards for innovation in engineering education and practical implementation, as well as published research in leading journals. I am dedicated to continuous learning and contributing to the advancement of civil engineering.
+                </p>
+            </div>
+            <div class="personal-info">
+                <div class="info-item">
+                    <span class="info-label">Name:</span>
+                    <span class="info-value">Sasishekhar Thapa</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Email:</span>
+                    <span class="info-value">sasishekharthapa@gmail.com</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Phone:</span>
+                    <span class="info-value">+977 9869003789</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Address:</span>
+                    <span class="info-value">Lalitpur, Nepal</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Education:</span>
+                    <span class="info-value">Graduate in Civil Engineering</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Position:</span>
+                    <span class="info-value">Lecturer & Lab Assistant</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Research Section -->
+    <section id="research" class="dark-section">
+        <div class="container">
+            <h2 class="section-title">Research Works</h2>
+            <div class="research-grid">
+                <div class="research-item">
+                    <img src="images/research/research-1.jpg" alt="Research 1" class="research-img">
+                    <div class="research-content">
+                        <h3>Seismic Resistance in High-Rise Structures</h3>
+                        <p>This research explores innovative approaches to enhance seismic resistance in high-rise buildings using advanced materials and design techniques...</p>
+                        <button class="read-more-btn" data-modal="modal1">Read More</button>
+                    </div>
+                </div>
+                <div class="research-item">
+                    <img src="images/research/research-2.jpg" alt="Research 2" class="research-img">
+                    <div class="research-content">
+                        <h3>Sustainable Concrete Alternatives</h3>
+                        <p>Investigation of eco-friendly concrete mixtures that reduce carbon footprint while maintaining structural integrity and durability...</p>
+                        <button class="read-more-btn" data-modal="modal2">Read More</button>
+                    </div>
+                </div>
+                <div class="research-item">
+                    <img src="images/research/research-3.jpg" alt="Research 3" class="research-img">
+                    <div class="research-content">
+                        <h3>Bridge Health Monitoring Systems</h3>
+                        <p>Development of cost-effective sensor networks for real-time monitoring of structural health in bridges and large infrastructure projects...</p>
+                        <button class="read-more-btn" data-modal="modal3">Read More</button>
+                    </div>
+                </div>
+                <div class="research-item hidden">
+                    <img src="images/research/research-4.jpg" alt="Research 4" class="research-img">
+                    <div class="research-content">
+                        <h3>Innovative Materials for Sustainable Construction</h3>
+                        <p>Research on the development and application of innovative materials such as self-healing concrete and recycled plastic composites in construction...</p>
+                        <button class="read-more-btn" data-modal="modal4">Read More</button>
+                    </div>
+                </div>
+            </div>
+            <div class="show-more-container">
+                <button id="research-show-more" class="show-more-btn">Show More</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="dark-section">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-grid">
+                <div class="project-item">
+                    <img src="images/projects/project-1.jpg" alt="Project 1" class="project-img">
+                    <div class="project-content">
+                        <h3>Green Heights Residential Complex</h3>
+                        <p>Led the structural design team for a 25-story sustainable residential building featuring innovative earthquake-resistant design...</p>
+                        <button class="read-more-btn" data-modal="modal4">Read More</button>
+                    </div>
+                </div>
+                <div class="project-item">
+                    <img src="images/projects/project-2.jpg" alt="Project 2" class="project-img">
+                    <div class="project-content">
+                        <h3>Riverfront Development Project</h3>
+                        <p>Designed and managed the implementation of a comprehensive riverfront development project focusing on flood control and public spaces...</p>
+                        <button class="read-more-btn" data-modal="modal5">Read More</button>
+                    </div>
+                </div>
+                <div class="project-item">
+                    <img src="images/projects/project-3.jpg" alt="Project 3" class="project-img">
+                    <div class="project-content">
+                        <h3>Mountain Highway Construction</h3>
+                        <p>Served as lead engineer for a challenging mountain highway project, implementing innovative solutions for slope stability and erosion control...</p>
+                        <button class="read-more-btn" data-modal="modal6">Read More</button>
+                    </div>
+                </div>
+                <div class="project-item hidden">
+                    <img src="images/projects/project-4.jpg" alt="Project 4" class="project-img">
+                    <div class="project-content">
+                        <h3>Smart City Infrastructure Development</h3>
+                        <p>Part of the core team designing smart infrastructure solutions including intelligent transportation systems and automated waste management...</p>
+                        <button class="read-more-btn" data-modal="modal7">Read More</button>
+                    </div>
+                </div>
+            </div>
+            <div class="show-more-container">
+                <button id="projects-show-more" class="show-more-btn">Show More</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="dark-section">
+        <div class="container">
+            <h2 class="section-title">Contact Me</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt contact-icon"></i>
+                        <div>
+                            <h3>Location</h3>
+                            <p>Lalitpur, Nepal</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope contact-icon"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p>sasishekharthapa@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone contact-icon"></i>
+                        <div>
+                            <h3>Phone</h3>
+                            <p>+977 9869003789</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock contact-icon"></i>
+                        <div>
+                            <h3>Working Hours</h3>
+                            <p>Sunday-Friday: 9AM - 5PM</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" class="form-input" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" class="form-input" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" class="form-input" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" class="form-input" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">SasiShekhar</div>
+                <p>Civil Engineer, Lecturer, and Project Manager delivering buildings and roads across Nepal.</p>
+                <div class="quick-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#research">Research Works</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact Info</h3>
+                    <p>Lalitpur, Nepal</p>
+                    <p>+977 9869003789</p>
+                    <p>sasishekharthapa@gmail.com</p>
+                </div>
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 Sasishekhar Thapa. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modals -->
+    <div id="modal1" class="modal modal-dark">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Seismic Resistance in High-Rise Structures</h2>
+            <p>This comprehensive study examined the behavior of high-rise structures under seismic loads and proposed innovative reinforcement techniques using shape memory alloys and base isolation systems. The research included both computational modeling and physical testing of scaled models.</p>
+            <p>Key findings demonstrated a 40% improvement in energy dissipation and a significant reduction in structural damage during simulated earthquake conditions. The research was published in the International Journal of Structural Engineering and has been cited in several subsequent studies.</p>
+        </div>
+    </div>
+
+    <div id="modal2" class="modal modal-dark">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Sustainable Concrete Alternatives</h2>
+            <p>This research focused on developing sustainable concrete mixtures using industrial by-products and locally available materials. We investigated partial replacements of cement with fly ash, slag, and rice husk ash, along with alternative aggregate sources.</p>
+            <p>Our findings showed that optimized mixtures could reduce the carbon footprint of concrete by up to 35% while maintaining or even improving compressive strength and durability characteristics. The research has practical applications in the Nepalese construction industry, particularly in reducing dependency on imported materials.</p>
+        </div>
+    </div>
+
+    <div id="modal3" class="modal modal-dark">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Bridge Health Monitoring Systems</h2>
+            <p>This project developed a low-cost wireless sensor network system for continuous monitoring of bridge health parameters. The system utilizes accelerometers, strain gauges, and environmental sensors to detect changes in structural behavior that may indicate damage or deterioration.</p>
+            <p>Field testing on three bridges in Nepal demonstrated the system's effectiveness in detecting early signs of structural issues. The technology is particularly valuable for developing countries where resources for infrastructure maintenance are limited but safety is paramount.</p>
+        </div>
+    </div>
+
+    <div id="modal4" class="modal modal-light">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Green Heights Residential Complex</h2>
+            <p>Full details about the Green Heights Residential Complex project...</p>
+        </div>
+    </div>
+
+    <div id="modal5" class="modal modal-light">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Riverfront Development Project</h2>
+            <p>Full details about the Riverfront Development Project...</p>
+        </div>
+    </div>
+
+    <div id="modal6" class="modal modal-light">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Mountain Highway Construction</h2>
+            <p>Full details about the Mountain Highway Construction project...</p>
+        </div>
+    </div>
+
+    <div id="modal7" class="modal modal-light">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Smart City Infrastructure Development</h2>
+            <p>Full details about the Smart City Infrastructure Development project...</p>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+    <button id="backToTop" class="back-to-top"><i class="fas fa-chevron-up"></i></button>
+
+
+</body>
+</html>
