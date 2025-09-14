@@ -29,10 +29,15 @@
     <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="container hero-container">
-            <img src="images/sasi.jpg.jpg" alt="Sasishekhar Thapa" class="profile-img">
-            <h1>Sasishekhar Thapa</h1>
-            <p class="hero-title">Civil Engineer</p>
-            <p class="hero-description">Civil engineer specializing in buildings and roads across Nepal. I plan, design, and deliver safe, sustainable infrastructure and teach structural engineering as a lecturer.</p>
+            <div class="hero-header">
+                <img src="images/sasi.jpg.jpg" alt="Sasishekhar Thapa" class="profile-img" />
+            </div>
+            <h1><span class="hero-name">Sasishekhar</span> <span class="hero-gradient">Thapa</span></h1>
+            <div class="hero-title">Civil Engineer</div>
+            <p class="hero-description">
+                Civil engineer specializing in buildings and roads across Nepal.<br>
+                I plan, design, and deliver safe, sustainable infrastructure and teach structural engineering as a lecturer.
+            </p>
             <div class="hero-buttons">
                 <a href="#projects" class="btn btn-primary">View My Work</a>
                 <a href="#contact" class="btn btn-secondary">Get In Touch</a>
@@ -81,6 +86,11 @@
                     <span class="info-value">Lecturer & Lab Assistant</span>
                 </div>
             </div>
+           
+        </div>
+        <!-- View CV Button -->
+        <div class="view-cv-container" style="text-align:right; margin-top:20px; margin-right: 20%;">
+            <button id="viewCVBtn" class="btn btn-primary">View CV</button>
         </div>
     </section>
 
@@ -234,8 +244,12 @@
     <footer>
         <div class="container">
             <div class="footer-content">
-                <div class="footer-logo">SasiShekhar</div>
-                <p>Civil Engineer, Lecturer, and Project Manager delivering buildings and roads across Nepal.</p>
+                <div>
+                    <div class="footer-logo">SasiShekhar</div>
+                    <p>
+                        Civil Engineer, Lecturer, and Project Manager delivering buildings and roads across Nepal.
+                    </p>
+                </div>
                 <div class="quick-links">
                     <h3>Quick Links</h3>
                     <ul>
@@ -325,9 +339,42 @@
         </div>
     </div>
 
+    <!-- CV Modal -->
+    <div id="cvModal" class="modal modal-light">
+        <div class="modal-content" style="max-width:700px;">
+            <span class="close-modal" id="closeCVModal">&times;</span>
+            <h2>My CV</h2>
+            <p style="text-align:center; font-size:0.95em; color:#555;">Scroll to view all pages.</p>
+            <iframe src="cv/sasishekhar_cv.pdf" width="100%" height="600px" style="border:none;"></iframe>
+            <div style="text-align:center; margin-top:20px;">
+                <a href="cv/sasishekhar_cv.pdf" download class="btn btn-secondary">Download CV</a>
+            </div>
+        </div>
+    </div>
+
     <script src="js/script.js"></script>
     <button id="backToTop" class="back-to-top"><i class="fas fa-chevron-up"></i></button>
 
+    <script>
+        // CV Modal functionality
+        const viewCVBtn = document.getElementById('viewCVBtn');
+        const cvModal = document.getElementById('cvModal');
+        const closeCVModal = document.getElementById('closeCVModal');
+
+        viewCVBtn.addEventListener('click', () => {
+            cvModal.style.display = 'block';
+        });
+
+        closeCVModal.addEventListener('click', () => {
+            cvModal.style.display = 'none';
+        });
+
+        window.addEventListener('click', (event) => {
+            if (event.target == cvModal) {
+                cvModal.style.display = 'none';
+            }
+        });
+    </script>
 
 </body>
 </html>

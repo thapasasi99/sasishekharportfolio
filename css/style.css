@@ -8,6 +8,8 @@
     --text-dark: #333333;
     --gray-light: #e9ecef;
     --transition: all 0.3s ease;
+    --about-bg: #222; /* About section background color */
+    --about-text: #fff; /* About section text color */
 }
 
 * {
@@ -166,94 +168,135 @@ header.hide {
     display: none;
 }
 
-/* Hero Section */
+/* --- HERO SECTION --- */
 .hero {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    background: linear-gradient(135deg, #f0f4f8 0%, #e3eaf3 100%);
-    padding: 8rem 0 4rem;
+    background: #eaf3ff;
+    padding: 80px 0 60px 0;
     text-align: center;
+    box-shadow: 0 0 60px 0 rgba(80, 120, 255, 0.08) inset;
 }
 
 .hero-container {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.hero-header {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
+    margin-bottom: 32px;
 }
 
 .profile-img {
-    width: 250px;
-    height: 250px;
-    border-radius: 50%;
+    width: 220px;
+    height: 220px;
     object-fit: cover;
-    border: 5px linear-gradient(45deg, #1a1a2e, #0f4c75);
-    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
-    margin-bottom: 1.5rem;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    background: linear-gradient(135deg, #101820 60%, #2a7be4 100%);
+    background-origin: border-box;
+    background-clip: border-box;
+    box-shadow: 0 12px 48px 0 rgba(80,120,255,0.18), 0 0 0 4px #fff;
+    position: relative;
+    z-index: 1;
+}
+
+/* Thin gradient border using pseudo-element for extra shine */
+.profile-img::after {
+    content: "";
+    position: absolute;
+    top: -4px; left: -4px; right: -4px; bottom: -4px;
+    border-radius: 50%;
+    padding: 0;
+    background: linear-gradient(90deg, #101820 60%, #2a7be4 100%);
+    z-index: -1;
+    pointer-events: none;
+    opacity: 0.7;
+    box-shadow: 0 0 32px 0 rgba(80,120,255,0.12);
 }
 
 .hero h1 {
-    font-size: 3.7rem;
-    margin-bottom: 0.5rem;
-    background: linear-gradient(45deg, #1a1a2e, #0f4c75);
-    background-clip: text;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-size: 3.5rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin-bottom: 18px;
+    line-height: 1.1;
+    color: #101820;
+}
+
+.hero-gradient {
+    background: linear-gradient(90deg, #2a7be4 60%, #6ec6ff 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    color: transparent;
+    background-clip: text;
+    text-shadow: 0 2px 16px rgba(80,120,255,0.12);
 }
 
 .hero-title {
+    font-family: 'Montserrat', Arial, sans-serif;
     font-size: 2.1rem;
-    color: var(--accent-color);
-    margin-bottom: 1.5rem;
-    font-weight: 600;
+    font-weight: 700;
+    color: #2a7be4;
+    letter-spacing: 1.5px;
+    margin-bottom: 28px;
+    text-shadow: 0 2px 12px rgba(80,120,255,0.10);
 }
 
 .hero-description {
-    font-size: 1.3rem;
-    margin-bottom: 2.9rem;
-    max-width: 600px;
-    color: var(--text-dark);
+    font-family: 'Poppins', Arial, sans-serif;
+    font-size: 1.25rem;
+    color: #222a3a;
+    margin-bottom: 48px;
+    font-weight: 400;
+    line-height: 1.6;
+    text-shadow: 0 1px 8px rgba(80,120,255,0.08);
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .hero-buttons {
     display: flex;
-    gap: 1rem;
+    justify-content: center;
+    gap: 32px;
+    margin-top: 10px;
 }
 
 .btn {
-    display: inline-block;
-    padding: 0.8rem 2rem;
-    border-radius: 50px;
-    text-decoration: none;
-    font-weight: 600;
-    transition: var(--transition);
-    text-transform: uppercase;
-    letter-spacing: 1px;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 18px 44px;
+    border-radius: 14px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 24px rgba(79, 115, 232, 0.1);
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s;
 }
 
 .btn-primary {
-    background-color: var(--accent-color);
-    color: white;
-    border: 2px solid var(--accent-color);
+    background: linear-gradient(90deg, #2a7be4 60%, #1e3c72 100%);
+    color: #fff;
 }
 
 .btn-primary:hover {
-    background-color: transparent;
-    color: var(--accent-color);
-    transform: translateY(-3px);
+    background: linear-gradient(90deg, #1e3c72 60%, #2a7be4 100%);
+    box-shadow: 0 6px 32px rgba(80,120,255,0.18);
 }
 
 .btn-secondary {
-    background-color: transparent;
-    color: var(--accent-color);
-    border: 2px solid var(--accent-color);
+    background: #172023;
+    color: #2a7be4;
+    border: 2px solid #2a7be4;
 }
 
 .btn-secondary:hover {
-    background-color: var(--accent-color);
-    color: white;
-    transform: translateY(-3px);
+    background: #2a7be4;
+    color: #fff;
+    border-color: #101820;
+    box-shadow: 0 6px 32px rgba(80,120,255,0.18);
 }
 
 /* Sections */
@@ -748,6 +791,14 @@ footer {
     color: #222;
 }
 
+/* Add this to ensure CV modal matches the About section background */
+
+
+#cvModal .modal-content {
+    background: var(--about-bg, #222); /* Use your about section bg color or fallback */
+    color: var(--about-text, #fff);    /* Optional: match about section text color */
+}
+
 /* Back to Top Button */
 .back-to-top {
     position: fixed;
@@ -961,4 +1012,16 @@ header,
 .nav-link:hover,
 .nav-link:not(.active):hover {
     color: #222c3a; /* Remove color change on hover */
+}
+
+/* Add this at the end of your CSS file */
+@media (max-width: 800px) {
+    #cvModal .modal-content {
+        max-width: 95vw;
+        padding: 10px;
+    }
+    #cvModal iframe {
+        height: 60vw;
+        min-height: 300px;
+    }
 }
