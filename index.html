@@ -18,11 +18,11 @@
   --card: #1c2128;
   --nav-h: 70px;
 }
-
+ 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
+ 
 html { scroll-behavior: smooth; }
-
+ 
 body {
   font-family: 'DM Sans', sans-serif;
   background: var(--bg);
@@ -31,12 +31,12 @@ body {
   font-size: 1.2rem;
   overflow-x: hidden;
 }
-
+ 
 /* ─── SCROLLBAR ─── */
 ::-webkit-scrollbar { width: 6px; }
 ::-webkit-scrollbar-track { background: var(--bg); }
 ::-webkit-scrollbar-thumb { background: var(--accent); border-radius: 3px; }
-
+ 
 /* ─── NAVBAR ─── */
 nav {
   position: fixed; top: 0; left: 0; right: 0; z-index: 100;
@@ -48,7 +48,7 @@ nav {
   border-bottom: 1px solid var(--border);
   transition: background 0.3s;
 }
-
+ 
 .nav-logo {
   font-family: 'Playfair Display', serif;
   font-size: 1.5rem;
@@ -57,7 +57,7 @@ nav {
   text-decoration: none;
   letter-spacing: 0.5px;
 }
-
+ 
 .nav-links { display: flex; gap: 2.5rem; list-style: none; }
 .nav-links a {
   color: var(--muted); text-decoration: none; font-size: 1rem;
@@ -69,10 +69,10 @@ nav {
 }
 .nav-links a:hover { color: var(--text); }
 .nav-links a:hover::after { width: 100%; }
-
+ 
 .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; }
 .hamburger span { display: block; width: 24px; height: 2px; background: var(--text); border-radius: 2px; transition: all 0.3s; }
-
+ 
 /* ─── HERO ─── */
 #home {
   min-height: 100vh;
@@ -80,7 +80,7 @@ nav {
   padding: calc(var(--nav-h) + 30px) 5% 40px;
   position: relative; overflow: hidden;
 }
-
+ 
 .hero-inner {
   display: grid;
   grid-template-columns: 480px 1fr;
@@ -90,7 +90,7 @@ nav {
   max-width: 1300px;
   margin: 0 auto;
 }
-
+ 
 .hero-photo-wrap {
   position: relative;
   display: flex;
@@ -125,21 +125,21 @@ nav {
 .hero-photo:hover {
   transform: rotate3d(0, 1, 0, 180deg) scale(1.03);
 }
-
+ 
 .hero-bg {
   position: absolute; inset: 0; pointer-events: none;
   background: radial-gradient(ellipse 70% 60% at 60% 40%, rgba(46,204,151,0.06) 0%, transparent 70%);
 }
-
+ 
 .hero-grid {
   position: absolute; inset: 0; pointer-events: none; opacity: 0.03;
   background-image: linear-gradient(var(--accent) 1px, transparent 1px),
                     linear-gradient(90deg, var(--accent) 1px, transparent 1px);
   background-size: 40px 40px;
 }
-
+ 
 .hero-content { animation: fadeUp 0.9s 0.2s ease both; }
-
+ 
 .hero-greeting {
   font-size: 1.1rem; font-weight: 500; color: var(--accent);
   letter-spacing: 3px; text-transform: uppercase; margin-bottom: 1.2rem;
@@ -148,7 +148,7 @@ nav {
 .hero-greeting::before {
   content: ''; display: block; width: 40px; height: 2px; background: var(--accent);
 }
-
+ 
 .hero-name {
   font-family: 'Playfair Display', serif;
   font-size: clamp(3.2rem, 6vw, 5.5rem);
@@ -156,22 +156,22 @@ nav {
   color: var(--text); margin-bottom: 0.8rem;
 }
 .hero-name span { color: var(--accent); }
-
+ 
 .hero-role {
   font-size: clamp(1.3rem, 2.5vw, 1.8rem);
   color: var(--muted); font-weight: 400; margin-bottom: 2rem;
   letter-spacing: 1px;
 }
-
+ 
 .hero-mission {
   font-size: 1.35rem; color: var(--muted);
   max-width: 580px; margin-bottom: 3rem;
   border-left: 3px solid var(--accent); padding-left: 1.5rem;
   font-style: italic;
 }
-
+ 
 .hero-btns { display: flex; gap: 1.2rem; flex-wrap: wrap; }
-
+ 
 .btn {
   display: inline-flex; align-items: center; gap: 8px;
   padding: 16px 32px; border-radius: 6px;
@@ -187,7 +187,7 @@ nav {
   border: 1.5px solid var(--border);
 }
 .btn-outline:hover { border-color: var(--accent); color: var(--accent); transform: translateY(-2px); }
-
+ 
 /* ─── SECTION BASE ─── */
 section { padding: 70px 5%; }
 .section-label {
@@ -203,7 +203,7 @@ section { padding: 70px 5%; }
   width: 60px; height: 3px; background: var(--accent);
   border-radius: 2px; margin-bottom: 2.5rem;
 }
-
+ 
 /* ─── ABOUT ─── */
 #about { background: var(--bg2); }
 .about-grid { 
@@ -214,7 +214,7 @@ section { padding: 70px 5%; }
   max-width: 1300px;
   margin: 0 auto;
 }
-
+ 
 .about-image-wrap {
   position: relative; display: flex; justify-content: center; align-items: center;
 }
@@ -223,7 +223,7 @@ section { padding: 70px 5%; }
   border: 2px dashed rgba(46,204,151,0.25);
   border-radius: 14px; animation: spin 25s linear infinite;
 }
-
+ 
 .about-img {
   width: 100%; 
   max-width: 450px; 
@@ -234,7 +234,7 @@ section { padding: 70px 5%; }
   position: relative; 
   z-index: 2;
 }
-
+ 
 .about-content h3 {
   font-family: 'Playfair Display', serif;
   font-size: 1.8rem;
@@ -242,35 +242,35 @@ section { padding: 70px 5%; }
   margin-bottom: 1.5rem;
   color: var(--text);
 }
-
+ 
 .about-content p {
   font-size: 1.25rem;
   color: var(--muted);
   margin-bottom: 1.8rem;
   line-height: 1.9;
 }
-
+ 
 /* ─── KEYFRAMES ─── */
 @keyframes fadeUp {
   from { opacity: 0; transform: translateY(30px); }
   to { opacity: 1; transform: translateY(0); }
 }
-
+ 
 @keyframes spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
-
+ 
 @keyframes breathe {
   0%, 100% { transform: scale(1); }
   50% { transform: scale(1.08); }
 }
-
+ 
 .reveal { opacity: 0; transform: translateY(30px); }
 .reveal.visible { 
   animation: fadeUp 0.8s ease forwards;
 }
-
+ 
 /* ─── RESEARCH ─── */
 #research { max-width: 1300px; margin: 0 auto; }
 .research-grid {
@@ -278,7 +278,7 @@ section { padding: 70px 5%; }
   grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
   gap: 2.5rem;
 }
-
+ 
 .research-card {
   background: var(--card);
   border: 1px solid var(--border);
@@ -291,17 +291,17 @@ section { padding: 70px 5%; }
   transform: translateY(-8px);
   box-shadow: 0 20px 40px rgba(46,204,151,0.15);
 }
-
+ 
 .research-card-img {
   width: 100%;
   height: 220px;
   object-fit: cover;
 }
-
+ 
 .research-card-body {
   padding: 2rem;
 }
-
+ 
 .research-tag {
   display: inline-block;
   font-size: 0.85rem;
@@ -312,20 +312,20 @@ section { padding: 70px 5%; }
   margin-bottom: 1rem;
   font-weight: 600;
 }
-
+ 
 .research-card h3 {
   font-family: 'Playfair Display', serif;
   font-size: 1.4rem;
   margin-bottom: 1rem;
   line-height: 1.4;
 }
-
+ 
 .research-card p {
   font-size: 1.1rem;
   color: var(--muted);
   margin-bottom: 1.5rem;
 }
-
+ 
 .card-link {
   color: var(--accent);
   text-decoration: none;
@@ -333,11 +333,11 @@ section { padding: 70px 5%; }
   transition: color 0.2s;
 }
 .card-link:hover { color: var(--accent2); }
-
+ 
 /* ─── PROJECTS ─── */
 #projects { max-width: 1300px; margin: 0 auto; }
 .projects-list { display: flex; flex-direction: column; gap: 4rem; }
-
+ 
 .project-item {
   display: grid;
   grid-template-columns: 80px 1fr 350px;
@@ -349,12 +349,12 @@ section { padding: 70px 5%; }
   border: 1px solid var(--border);
   transition: all 0.3s;
 }
-
+ 
 .project-item:hover {
   border-color: var(--accent);
   background: var(--bg3);
 }
-
+ 
 .project-num {
   font-family: 'Playfair Display', serif;
   font-size: 3rem;
@@ -362,94 +362,94 @@ section { padding: 70px 5%; }
   color: var(--accent);
   opacity: 0.3;
 }
-
+ 
 .project-info h3 {
   font-family: 'Playfair Display', serif;
   font-size: 1.6rem;
   margin-bottom: 1.2rem;
   line-height: 1.3;
 }
-
+ 
 .project-info p {
   font-size: 1.15rem;
   color: var(--muted);
   line-height: 1.8;
 }
-
+ 
 .project-img-side {
   width: 100%;
   height: 250px;
   object-fit: cover;
   border-radius: 8px;
 }
-
+ 
 /* ─── CONTACT ─── */
 #contact { background: var(--bg2); max-width: 1300px; margin: 0 auto; }
-
+ 
 .contact-wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 4rem;
 }
-
+ 
 .contact-info-list {
   display: flex;
   flex-direction: column;
   gap: 2.5rem;
 }
-
+ 
 .contact-info-item {
   display: flex;
   gap: 1.5rem;
   align-items: flex-start;
 }
-
+ 
 .contact-icon {
   font-size: 2.5rem;
   flex-shrink: 0;
 }
-
+ 
 .contact-info-item h4 {
   font-size: 1.3rem;
   margin-bottom: 0.5rem;
   color: var(--text);
 }
-
+ 
 .contact-info-item p {
   font-size: 1.15rem;
   color: var(--muted);
 }
-
+ 
 /* ─── FORM ─── */
 form {
   display: flex;
 }
-
+ 
 .form-group {
   display: flex;
   flex-direction: column;
   gap: 2rem;
   width: 100%;
 }
-
+ 
 .form-row {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
 }
-
+ 
 .form-field {
   display: flex;
   flex-direction: column;
 }
-
+ 
 .form-field label {
   font-size: 1.1rem;
   font-weight: 600;
   margin-bottom: 0.8rem;
   color: var(--text);
 }
-
+ 
 .form-field input,
 .form-field textarea {
   padding: 1.2rem;
@@ -461,18 +461,18 @@ form {
   font-size: 1.1rem;
   transition: border-color 0.2s;
 }
-
+ 
 .form-field input:focus,
 .form-field textarea:focus {
   outline: none;
   border-color: var(--accent);
 }
-
+ 
 .form-field textarea {
   resize: vertical;
   min-height: 150px;
 }
-
+ 
 /* ─── FOOTER ─── */
 footer {
   background: var(--bg);
@@ -481,18 +481,18 @@ footer {
   border-top: 1px solid var(--border);
   font-size: 1.1rem;
 }
-
+ 
 .footer-name {
   font-size: 1.4rem;
   font-weight: 700;
   margin-bottom: 0.5rem;
 }
-
+ 
 footer p {
   color: var(--muted);
   margin: 0.5rem 0;
 }
-
+ 
 /* ─── RESPONSIVE ─── */
 @media (max-width: 1024px) {
   .hero-inner, .about-grid {
@@ -512,7 +512,7 @@ footer p {
     grid-template-columns: 1fr;
   }
 }
-
+ 
 @media (max-width: 768px) {
   .nav-links { gap: 1.5rem; }
   .nav-links a { font-size: 0.95rem; }
@@ -534,7 +534,7 @@ footer p {
 </style>
 </head>
 <body>
-
+ 
 <!-- ─── NAVBAR ─── -->
 <nav>
   <a href="#" class="nav-logo">SasiShekhar</a>
@@ -551,7 +551,7 @@ footer p {
     <span></span>
   </div>
 </nav>
-
+ 
 <!-- ─── HERO ─── -->
 <section id="home">
   <div class="hero-bg"></div>
@@ -571,7 +571,7 @@ footer p {
     </div>
   </div>
 </section>
-
+ 
 <!-- ─── ABOUT ─── -->
 <section id="about">
   <div class="reveal">
@@ -592,7 +592,7 @@ footer p {
     </div>
   </div>
 </section>
-
+ 
 <!-- ─── RESEARCH ─── -->
 <section id="research">
   <div class="reveal">
@@ -601,7 +601,7 @@ footer p {
     <div class="section-divider"></div>
   </div>
   <div class="research-grid">
-
+ 
     <div class="research-card reveal">
       <img class="research-card-img"
            src="https://thapasasi99.github.io/sasishekharportfolio/images/research/3.png"
@@ -614,7 +614,7 @@ footer p {
         <a class="card-link" href="#">Read More →</a>
       </div>
     </div>
-
+ 
     <div class="research-card reveal">
       <img class="research-card-img"
            src="https://thapasasi99.github.io/sasishekharportfolio/images/projects/Model4.png"
@@ -627,7 +627,7 @@ footer p {
         <a class="card-link" href="#">Read More →</a>
       </div>
     </div>
-
+ 
     <div class="research-card reveal">
       <img class="research-card-img"
            src="https://thapasasi99.github.io/sasishekharportfolio/images/projects/model5.png"
@@ -640,10 +640,10 @@ footer p {
         <a class="card-link" href="#">Read More →</a>
       </div>
     </div>
-
+ 
   </div>
 </section>
-
+ 
 <!-- ─── PROJECTS ─── -->
 <section id="projects">
   <div class="reveal">
@@ -652,7 +652,7 @@ footer p {
     <div class="section-divider"></div>
   </div>
   <div class="projects-list">
-
+ 
     <div class="project-item reveal">
       <span class="project-num">01</span>
       <div class="project-info">
@@ -661,7 +661,7 @@ footer p {
       </div>
       <img class="project-img-side" src="https://thapasasi99.github.io/sasishekharportfolio/images/projects/Model4.png" alt="Pavement Model"/>
     </div>
-
+ 
     <div class="project-item reveal">
       <span class="project-num">02</span>
       <div class="project-info">
@@ -670,7 +670,7 @@ footer p {
       </div>
       <img class="project-img-side" src="https://thapasasi99.github.io/sasishekharportfolio/images/projects/model5.png" alt="Asphalt Mix"/>
     </div>
-
+ 
     <div class="project-item reveal">
       <span class="project-num">03</span>
       <div class="project-info">
@@ -679,7 +679,7 @@ footer p {
       </div>
       <img class="project-img-side" src="https://thapasasi99.github.io/sasishekharportfolio/images/projects/model6.png" alt="Traffic Survey"/>
     </div>
-
+ 
     <div class="project-item reveal">
       <span class="project-num">04</span>
       <div class="project-info">
@@ -688,10 +688,10 @@ footer p {
       </div>
       <img class="project-img-side" src="https://thapasasi99.github.io/sasishekharportfolio/images/projects/model7.png" alt="Road Safety"/>
     </div>
-
+ 
   </div>
 </section>
-
+ 
 <!-- ─── CONTACT ─── -->
 <section id="contact">
   <div class="reveal">
@@ -735,7 +735,7 @@ footer p {
         </div>
       </div>
     </div>
-
+ 
     <form class="reveal" onsubmit="handleForm(event)">
       <div class="form-group">
         <div class="form-row">
@@ -761,26 +761,26 @@ footer p {
     </form>
   </div>
 </section>
-
+ 
 <!-- ─── FOOTER ─── -->
 <footer>
   <p class="footer-name">SasiShekhar Thapa</p>
   <p>Undergraduate Civil Engineer · Researcher · Lecturer</p>
   <p style="margin-top:0.8rem;font-size:0.95rem;">© 2024 Sasishekhar Thapa. All Rights Reserved.</p>
 </footer>
-
+ 
 <script>
 // Hamburger
 function toggleMenu() {
   document.getElementById('navLinks').classList.toggle('open');
 }
-
+ 
 // Scroll reveal
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); } });
 }, { threshold: 0.12 });
 document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
-
+ 
 // Active nav link
 const sections = document.querySelectorAll('section[id]');
 const navAs = document.querySelectorAll('.nav-links a');
@@ -791,7 +791,7 @@ window.addEventListener('scroll', () => {
     a.style.color = a.getAttribute('href') === '#' + cur ? 'var(--accent)' : '';
   });
 });
-
+ 
 // Form
 function handleForm(e) {
   e.preventDefault();
